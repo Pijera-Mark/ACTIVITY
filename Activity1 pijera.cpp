@@ -24,7 +24,10 @@ int main(){
             case 1:
                 listFiles();
                 break;
-            
+            case 4:
+                return 0;
+            default:
+                cout << "Invalid choice. Please try again." << endl;
 	}
 	
 	
