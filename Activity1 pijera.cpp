@@ -17,7 +17,7 @@ int main() {
         cout << "2. Tap To Create New Directory\n";
         cout << "3. Tap To Change the Working Directory\n";
         cout << "4. Tap To Exit Program\n";
-        cout << "Enter Number:\n ";
+        cout << "Enter option: ";
         cin >> choice;
 
         switch (choice) {
@@ -46,7 +46,7 @@ void list_file() {
     cout << "1. List All Files\n";
     cout << "2. List of Extension Files\n";
     cout << "3. List of Name Luck\n";
-    cout << "Enter Number: ";
+    cout << "Enter option: ";
     cin >> choice;
 
     switch (choice) {
@@ -63,7 +63,7 @@ void list_file() {
         }
         case 3: {
             string pattern;
-            cout << "Enter file name pattern please: ";
+            cout << "Enter file name1: ";
             cin >> pattern;
             system(("dir " + pattern).c_str());
             break;
@@ -87,11 +87,11 @@ void directory() {
 
 void change_dir() {
     int command;
-    cout << "Change The Directory Menu:" << endl;
+    cout << "Change The Directory Menu: " << endl;
     cout << "1. Move one step back." << endl;
     cout << "2. Move to the root directory." << endl;
     cout << "3. Move to a specific directory provided by the user." << endl;
-    cout << "Enter your choice: ";
+    cout << "Enter option: ";
     cin >> command;
 
     switch (command) {
